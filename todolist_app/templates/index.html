@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+    <title> welcome to index page </title>
+{% endblock title %}
+
+{% block content %}
+   <div class="container">
+      <div class="row mt-5">
+         <div class="col-lg-4">
+             <img src="{% static 'images/back.jpg' %}" alt="Nature" class="rounded-lg shadow" width="360" height="250">
+         </div>
+         <div class="col-lg-4">
+             <img src="{% static 'images/back.jpg' %}" alt="Nature" class="rounded-lg shadow" width="360" height="250">
+         </div>
+         <div class="col-lg-4">
+             <img src="{% static 'images/back.jpg' %}" alt="Nature" class="rounded-lg shadow" width="360" height="250">
+         </div>
+       </div>
+       <div class="row mt-4">
+       <div class="col-md-10 offset-md-1">
+         <center><p class="h1 text-primary">hii this is perfect shot of nature,</p></center>
+         <center><p class="h2 mt-3">this is good project,</p></center>
+         <center><p class="h5">this is beutifully nature</p></center>
+
+         <center><a href="{% url 'todolist' %}"><button type="button" class="btn btn-primary btn-lg mt-3 shadow">Let's get started</button></a></center>
+        </div>
+      </div
+   </div>
+{% endblock content %}
